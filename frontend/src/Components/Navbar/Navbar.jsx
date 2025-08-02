@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 import './Navbar.css'
 import theme from '../../assets/theme_pattern.svg'
 import underline from '../../assets/nav_underline.svg'
@@ -8,7 +8,6 @@ import menu_close from '../../assets/menu_close.svg'
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
-  const [darkMode, setDarkMode] = useState(false);
   const menuRef = useRef();
 
   const openMenu = () => {
@@ -18,16 +17,9 @@ const Navbar = () => {
     menuRef.current.style.right = "-300px";
   }
 
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
-  }, [darkMode]);
-
+  
   return (
-    <div className={`navbar ${darkMode ? 'navbar-dark' : ''}`}>
+    <div className="navbar">
       <div className='logo'>
         <h1>Mani</h1>
         <img src={theme} alt="" />

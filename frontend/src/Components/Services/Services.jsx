@@ -13,11 +13,11 @@ const Services = () => {
 
   return (
     <div id='services' className='services'>
-      <div className="title-box">
+      <div className="title-box" data-aos='flip-up'>
         <h1>My Services</h1>
         <img src={theme_pattern} alt="" />
       </div>
-      <div className="services-container">
+      <div className="services-container" data-aos='fade-up'>
         {Services_Data.map((service, index) => {
           const isExpanded = expandedIndex === index;
           return (

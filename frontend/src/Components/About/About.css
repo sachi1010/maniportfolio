@@ -127,3 +127,28 @@
         font-size: 12px;
     }
 }
+
+
+.about-left img {
+  /* width: 250px;
+  height: 250px;*/
+  border-radius: 10px; 
+  padding: 4px;
+  background: linear-gradient(45deg, #ff8a00, #e52e71, #9b00ff, #00d2ff);
+  background-size: 300% 300%;
+  animation: borderMove 6s ease infinite;
+  border: 1px solid transparent;
+}
+
+/* Optional: To animate the border background */
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

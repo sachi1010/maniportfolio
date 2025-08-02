@@ -7,15 +7,15 @@ import profile_img from '../../assets/myimg.jpg'
 const About = () => {
   return (
     <div id='about' className='about'>
-      <div className="title-box">
+      <div className="title-box" data-aos="flip-up">
         <h1>About me</h1>
         <img src={theme_pattern} alt="" />
       </div>
       <div className="about-sections">
-        <div className="about-left">
+        <div className="about-left" data-aos="fade-up">
           <img src={profile_img} alt="" />
         </div>
-        <div className="about-right">
+        <div className="about-right" data-aos="fade-down">
           <div className="about-para">
             <p>
               I am Manikandan, a dedicated Civil Engineer with over 10 years of experience in planning, designing, and managing construction projects. My expertise spans across residential, commercial, and infrastructure developments.
@@ -34,7 +34,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="about-achievements">
+      <div className="about-achievements" data-aos="fade-up">
         <div className="about-achievement">
           <h1>10+</h1>
           <p>YEARS OF EXPERIENCE</p>

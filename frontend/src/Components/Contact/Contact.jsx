@@ -11,11 +11,11 @@ const Contact = () => {
 
   return (
     <div id='contact' className='contact'>
-      <div className="title-box">
+      <div className="title-box" data-aos="flip-up">
         <h1>Get in touch</h1>
         <img src={theme_pattern} alt="" />
       </div>
-      <div className="contact-section">
+      <div className="contact-section" data-aos="fade-up">
         <div className="contact-left">
             <h1>Let's talk</h1>
             <p>I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>

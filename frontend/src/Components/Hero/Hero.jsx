@@ -6,16 +6,16 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 const Hero = () => {
   return (
     <div id='home' className='hero'>
-      <div className="hero-img-container">
+      <div className="hero-img-container" data-aos="fade-up-right">
         <div className="glow-background" ></div>
                <div className='hero-img'  > <img src={profile} alt=""  className='profile-img'/></div>
       </div>
-      <h1><span>I'm Manikandan</span> <br/>Civil Engineer</h1>
-      <p>
+      <h1 data-aos="zoom-in-down"><span>I'm Manikandan</span> <br/>Civil Engineer</h1>
+      <p data-aos="zoom-in-down">
         Civil Engineer with 10 years of experience, skilled in AutoCAD, Revit, and STAAD Pro. Focused on delivering reliable and efficient structures.
       </p>
 
-      <div className="hero-action">
+      <div className="hero-action" data-aos="zoom-in-down">
         <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></div>
         <div className="hero-resume">My resume</div>
       </div>
