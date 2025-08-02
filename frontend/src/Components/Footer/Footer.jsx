@@ -18,8 +18,8 @@ const Footer = () => {
             <div className='social-links'>
                <h2>Follow Us</h2>
                <div className="links">
-                  <a href="" target='_blank'><i className="bi bi-linkedin"></i></a>
-                  <a href="" target='_blank'><i className="bi bi-whatsapp"></i></a>
+                  <a href="http://www.linkedin.com/in/ermanik001" target='_blank'><i className="bi bi-linkedin"></i></a>
+                  <a href="https://wa.me/9788176043" target='_blank'><i className="bi bi-whatsapp"></i></a>
                </div>
                  
             </div>
