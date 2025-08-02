@@ -1,0 +1,228 @@
+ /* .mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 10%;
+}
+
+.mywork-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  
+}
+.mywork-container img{
+    width:100%;
+    height: 300px;
+    transition: 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.mywork-container img:hover{
+    transform: scale(1.10);
+    border: 4px solid #ff00ff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.mywork-showmore{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.mywork-showmore img{
+    width: 25px;
+}
+.mywork-showmore:hover{
+    gap: 30px;
+    transition: 0.6s;
+}
+@media(max-width:768px){
+    .mywork{
+        gap: 50px;
+        margin: 50px 6%;
+        align-items: start;
+    }
+    
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .mywork-showmore{
+        padding: 15px 30px;
+        font-size: 16px;
+        margin: 10px auto;
+       
+    }
+    .mywork-showmore:hover{
+        gap: 20px;
+    }
+} 
+
+
+
+
+.mywork-card p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.mywork-showmore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.mywork-showmore img.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.mywork-showmore img {
+  width: 16px;
+  transition: transform 0.3s;
+} */
+
+
+
+
+
+
+/* Container for the entire section */
+.mywork {
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 80px; */
+    margin: 80px 10%;
+}
+
+/* Title box with heading and pattern image */
+.title-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Flip book container - handles 3D perspective */
+.flip-book {
+  perspective: 2000px;
+  position: relative;
+  height: auto;
+  margin-top: 40px;
+}
+
+/* Inner container that gets rotated when flipping */
+.flip-page {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  /* background: #111111; */
+  /* padding: 40px; */
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); */
+}
+
+/* When flipping, apply 3D rotation */
+.flipping .flip-page {
+  transform: rotateY(10deg);
+}
+
+/* Card for each project */
+.mywork-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+   /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);  */
+  transition: transform 0.3s ease;
+}
+
+/* Slight scale on hover */
+.mywork-card:hover {
+  transform: scale(1.03);
+}
+
+/* Image styling inside each card */
+.mywork-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Text below image */
+.mywork-card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Navigation buttons container */
+.mywork-navigation {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style for navigation buttons */
+.mywork-navigation button {
+   padding: 18px 40px;
+  font-size: 18px;
+  /* background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%); */
+  background: linear-gradient(264deg, #0894df -5.09%, #ff1586 106.28%);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition:  0.3s;
+}
+
+/* Disabled state for buttons */
+.mywork-navigation button:disabled {
+ /* background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%); */
+  background: linear-gradient(264deg, #0894df -5.09%, #ff1586 106.28%);
+  cursor: not-allowed;
+}
+
+/* Hover effect for enabled buttons */
+.mywork-navigation button:hover:not(:disabled) {
+ color: #111111;
+ transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Responsive: Stack cards vertically on small screens */
+@media (max-width: 768px) {
+  .flip-page {
+    flex-direction: column;
+  }
+
+  .mywork-card {
+    width: 100%;
+  }
+  .mywork-navigation button{
+    padding: 20px 30px;
+  }
+}
