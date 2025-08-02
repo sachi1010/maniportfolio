@@ -8,7 +8,7 @@ const Hero = () => {
     <div id='home' className='hero'>
       <div className="hero-img-container" data-aos="fade-up-right">
         <div className="glow-background" ></div>
-               <div className='hero-img'  > <img src={profile} alt=""  className='profile-img'/></div>
+        <div className='hero-image' data-aos="zoom-in"><img src={profile} alt="Profile" /></div>  
       </div>
       <h1 data-aos="zoom-in-down"><span>I'm Manikandan</span> <br/>Civil Engineer</h1>
       <p data-aos="zoom-in-down">

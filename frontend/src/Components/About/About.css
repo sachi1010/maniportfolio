@@ -96,9 +96,9 @@
     .about-sections{
         flex-direction: column;
     }
-    .about-left{
+     .about-left{
         display: none;
-    }
+    } 
     .about-para{
         line-height: 25px;
     }

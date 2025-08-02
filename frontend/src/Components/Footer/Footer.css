@@ -14,7 +14,9 @@
 .footer .logo {
   position: relative;
 }
-
+.footer .logo h1{
+    font-size: 3rem;
+}
 .footer-top{
     display: flex;
     justify-content: space-between;
@@ -92,5 +94,13 @@
         display: flex;
         font-size: 14px;
     }
-   
+     .footer .logo img{
+        width: 100px;
+        left: 45px;
+        top: 20px;
+        height: 40px;
+     }
+     .footer-top-left p{
+        margin-top: 15px;
+     }
 }

@@ -24,7 +24,7 @@
   position: relative;
 }
 
-.logo img {
+.navbar .logo img {
   position: absolute;
   bottom: 0px;
   right: -25px;
